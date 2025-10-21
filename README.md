@@ -1,0 +1,1 @@
+By Using HTML,CSS,JAVASCRIPT,REACTJS user interface is created NODEJS AND EXPRESSJS is used handles data processing, business logic, and communication with databases and POSTGRESQL is used for storing the data
