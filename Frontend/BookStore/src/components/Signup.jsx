@@ -22,9 +22,9 @@ function Signup() {
             password:data.password
         }
         try{
-            const res=await axios.post("http://localhost:3000/user/signup",userinfo);
+            const res=await axios.post("https://bookstore-app-fs38.onrender.com/user/signup",userinfo);
             console.log(res)
-            if(res.data){
+            if(res && res.data){
                 toast.success("signup successful")
                 navigate(from,{replace:true});
             }

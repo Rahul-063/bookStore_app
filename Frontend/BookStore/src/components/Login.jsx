@@ -16,9 +16,9 @@ function Login() {
         password:data.password
       }
       try{
-          const res=await axios.post("http://localhost:3000/user/login",userinfo);
+          const res=await axios.post("https://bookstore-app-fs38.onrender.com/user/login",userinfo);
           console.log(res)
-          if(res.data){
+          if(res && res.data){
             toast.success("login successful")
             document.getElementById("my_modal_3").close();
             setTimeout(()=>{

@@ -9,9 +9,12 @@ function Course() {
   useEffect(()=>{
     const getbook=async()=>{
       try{
-        const res=await axios.get("http://localhost:3000/book");
-        console.log(res.data);
+        const res=await axios.get("https://bookstore-app-fs38.onrender.com/books");
+        if (res && res.data) {
         setbook(res.data);
+        }
+        console.log(res.data);
+        
       }catch(err){
         console.log(err)
       }
